@@ -1,70 +1,166 @@
-# Getting Started with Create React App
+# 🍽️ Taste Heaven  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img src="https://img.shields.io/badge/Stack-MERN-green?style=for-the-badge&logo=mongodb" alt="MERN Stack" />
+  <img src="https://img.shields.io/badge/Frontend-React-blue?style=for-the-badge&logo=react" alt="React" />
+  <img src="https://img.shields.io/badge/Backend-Express.js-black?style=for-the-badge&logo=express" alt="Express" />
+  <img src="https://img.shields.io/badge/Database-MongoDB-green?style=for-the-badge&logo=mongodb" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/Styling-TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css" alt="TailwindCSS" />
+  <img src="https://img.shields.io/badge/Payments-Stripe-635BFF?style=for-the-badge&logo=stripe" alt="Stripe" />
+</p>
 
-## Available Scripts
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=25&duration=4000&color=F23A2E&center=true&vCenter=true&width=600&lines=🍴+Welcome+to+Taste+Heaven!;🚀+A+Modern+Restaurant+Web+App+with+MERN+Stack;🔥+Order+Food+%7C+Book+Services+%7C+Track+Orders" alt="Typing Animation" />
+</p>
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📖 About the Project  
+**Taste Heaven** is a full-featured **Restaurant Management Web App** built with the **MERN stack** (MongoDB, Express, React, Node.js) and styled with **TailwindCSS**.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+It allows users to:  
+✅ Order Food Online 🍔  
+✅ Book Services (Birthday, Catering, Family Dining, Wedding) 🎉  
+✅ Track Orders & Deliveries 📦  
+✅ Manage Profiles & Notifications 👤  
+✅ Pay via Cash or Online (Stripe Integration) 💳  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Admins can manage orders, users, services, and offers with a dedicated dashboard 📊.  
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 📂 Project Structure  
 
-### `npm run build`
+```
+FINAL_PROJECT/
+│── backend/
+│   ├── config/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── utils/
+│   ├── server.js
+│   └── .env  (must be created manually)
+│
+│── frontend/
+│   ├── public/
+│   ├── src/
+│   ├── .env  (must be created manually)
+│   ├── package.json
+│   └── ...
+│
+│── .env  (must be created manually at root)
+│── package.json
+│── tailwind.config.js
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚙️ Installation & Setup  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 1️⃣ Clone the Repository  
+```sh
+git clone https://github.com/Gokulraj-max/Taste-Heaven.git
+cd TasteHeaven
+```
 
-### `npm run eject`
+### 2️⃣ Install Dependencies  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+#### Backend  
+```sh
+cd backend
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+#### Frontend  
+```sh
+cd frontend
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🗝️ Environment Variables  
 
-## Learn More
+⚠️ `.env` files are **not included** in GitHub. You must create them manually.  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### `/backend/.env`  
+```env
+MONGO_URI=mongodb://127.0.0.1:27017/mern_auth
+JWT_SECRET=YOUR-SECRET-KEY
+REACT_APP_BACKEND_URL=http://localhost:5000
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### `/frontend/.env`  
+```env
+REACT_APP_BACKEND_URL=http://localhost:5000
+```
 
-### Code Splitting
+### `/.env` (Root)  
+```env
+MONGO_URI=mongodb://127.0.0.1:27017/mern_auth
+JWT_SECRET=your_jwt_secret
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🚀 Run the Project  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Start Backend (Port: 5000)  
+```sh
+cd backend
+npm start
+```
 
-### Making a Progressive Web App
+### Start Frontend (Port: 3000)  
+```sh
+cd frontend
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Now visit:  
+👉 Frontend: [http://localhost:3000](http://localhost:3000)  
+👉 Backend API: [http://localhost:5000](http://localhost:5000)  
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🎯 Features  
 
-### Deployment
+- 🍔 **Food Ordering** – Browse menu, apply offers, and checkout  
+- 🎉 **Service Booking** – Reserve for Birthday, Catering, Family Dining, Wedding  
+- 📦 **Order Tracking** – Live status updates & Google Maps integration  
+- 👤 **Profile Management** – Edit user info & notifications  
+- 💳 **Payment Gateway** – Cash or Online (Stripe Integration)  
+- 📊 **Admin Dashboard** – Manage foods, users, orders, services & offers  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🛠️ Tech Stack  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Frontend**: React, TailwindCSS  
+- **Backend**: Node.js, Express.js  
+- **Database**: MongoDB  
+- **Authentication**: JWT  
+- **Payments**: Stripe API  
+- **Deployment**: (to be added – e.g., Vercel, Render, Heroku, Netlify)  
+
+---
+
+## 🤝 Contributing  
+
+1. Fork the repo 🍴  
+2. Create your feature branch (`git checkout -b feature-xyz`)  
+3. Commit changes (`git commit -m "Add new feature"`)  
+4. Push to branch (`git push origin feature-xyz`)  
+5. Open a Pull Request 🚀  
+
+---
+
+## 📜 License  
+
+This project is licensed under the **MIT License**.  
+
+---
+
+<p align="center">🔥 Built with ❤️ by <b>Taste Heaven Team</b> 🔥</p>
