@@ -1,0 +1,111 @@
+/* Services.css */
+
+/* Overall page container */
+.services-page {
+    padding: 20px;
+    background-color: #f8f9fa;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Header with title and invoice button */
+  .services-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .services-header h2 {
+    color: #343a40;
+    margin: 0;
+    font-size: 2rem;
+  }
+  
+  .print-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .print-btn svg {
+    margin-right: 8px;
+  }
+  
+  .print-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Bookings table styling */
+  .bookings-list {
+    overflow-x: auto;
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+    margin-left: -400px;
+    margin-top: 60px;
+  }
+  
+  .bookings-table th,
+  .bookings-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dee2e6;
+    text-align: left;
+  }
+  
+  .bookings-table th {
+    background-color: #007bff;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .bookings-table tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Chart section styling */
+  .chart-section {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+  }
+  
+  /* Loading state */
+  .services-loading {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 50px;
+    color: #007bff;
+  }
+  
+  /* Fade in animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .chart-container {
+    width: 600px;   /* Fixed width */
+    height: 300px;  /* Fixed height */
+    margin: 0 auto; /* Center container if desired */
+    position: relative;
+  }
+  

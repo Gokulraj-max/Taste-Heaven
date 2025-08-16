@@ -1,0 +1,69 @@
+/* Sidebar Container */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #f8f9fa;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px;
+  }
+  
+  /* Sidebar Sticky Content */
+  .sidebar-sticky {
+    position: relative;
+    height: 100%;
+    padding-top: 20px;
+  }
+  
+  /* Nav Items */
+  .sidebar .nav-item {
+    margin-bottom: 10px;
+  }
+  
+  /* Nav Links */
+  .sidebar .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .sidebar .nav-link:hover {
+    background-color: #e9ecef;
+    color: #000;
+  }
+  
+  /* Active Link */
+  .sidebar .nav-link.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Icons */
+  .sidebar .nav-link i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+  }
+  
+  /* Sign Out Button */
+  .sidebar .btn-link {
+    width: 100%;
+    text-align: left;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .sidebar .btn-link:hover {
+    background-color: #e9ecef;
+    color: #000;
+  }

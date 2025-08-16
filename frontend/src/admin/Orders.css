@@ -1,0 +1,168 @@
+/* Orders.css */
+
+/* Overall page styling */
+.orders-page {
+    padding: 20px;
+    animation: fadeIn 0.5s ease-in-out;
+    background-color: #f8f9fa;
+  }
+  
+  /* Header section containing the title and print button */
+  .orders-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+    color: #343a40;
+    margin: 0;
+    transition: color 0.3s ease;
+  }
+  
+  .page-title:hover {
+    color: #007bff;
+  }
+  
+  /* Print button styling */
+  .print-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .print-btn svg {
+    margin-right: 8px;
+  }
+  
+  .print-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Table container styling */
+  .orders-table-container {
+    overflow-x: auto;
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Orders table styling */
+  .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+  
+  .orders-table th,
+  .orders-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dee2e6;
+    text-align: left;
+  }
+  
+  .orders-table th {
+    background-color: #007bff;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .order-row:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Dropdown for order status */
+  .status-dropdown {
+    padding: 6px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease;
+    background-color: #fff;
+    color: #495057;
+  }
+  
+  .status-dropdown:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Actions icon styling */
+  .orders-table td svg {
+    font-size: 1.2rem;
+    color: #007bff;
+  }
+  
+  /* Chart section styling */
+  .chart-section {
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Loading spinner styling */
+  .orders-loading {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 50px;
+    color: #007bff;
+  }
+  
+  /* Fade in animation */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Invoice print styling (applied within the print window) */
+  .invoice {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+  }
+  
+  .invoice h2 {
+    margin-top: 0;
+    color: #343a40;
+  }
+  
+  .invoice table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .invoice table, 
+  .invoice th, 
+  .invoice td {
+    border: 1px solid #ddd;
+  }
+  
+  .invoice th, 
+  .invoice td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .chart-container {
+    width: 600px;  /* Set fixed width */
+    height: 300px; /* Set fixed height */
+    margin: 0 auto; /* Center it if desired */
+    position: relative;
+  }
+  

@@ -1,0 +1,183 @@
+/* Offers.css */
+
+/* Container for the whole offers page */
+.offers-container {
+  max-width: 1200px; /* Fixed size for the container */
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Main title */
+.offers-container h2 {
+  color: #343a40;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px; /* Medium size for the title */
+}
+
+/* Button to add a new offer */
+.btn {
+  padding: 8px 16px;
+  font-size: 14px; /* Small size for buttons */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Animated form container for adding/updating an offer */
+.offer-form {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px; /* Fixed size for the form */
+  margin: 0 auto;
+}
+
+/* Form title */
+.offer-form h3 {
+  color: #007bff;
+  margin-bottom: 15px;
+  font-size: 20px; /* Medium size for form title */
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+  font-size: 14px; /* Small size for labels */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px; /* Small size for inputs */
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit button styling */
+.btn-success {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: #218838;
+}
+
+/* Offers list container */
+.offers-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center the offer items */
+}
+
+/* Individual offer item styling */
+.offer-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 250px; /* Fixed size for offer items */
+  display: flex;
+  flex-direction: column;
+}
+
+.offer-item img {
+  width: 100%;
+  height: 150px; /* Fixed height for images */
+  object-fit: cover;
+}
+
+.offer-item div {
+  padding: 15px;
+}
+
+.offer-item h4 {
+  margin: 0 0 10px;
+  color: #343a40;
+  font-size: 16px; /* Medium size for offer name */
+}
+
+.offer-item p {
+  margin: 0 0 10px;
+  color: #666;
+  font-size: 14px; /* Small size for description */
+}
+
+/* Original price styling (strikethrough) */
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 8px;
+  font-size: 14px; /* Small size for original price */
+}
+
+/* Action buttons for each offer */
+.btn-warning,
+.btn-danger {
+  padding: 6px 12px;
+  font-size: 12px; /* Small size for action buttons */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .offer-item {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
