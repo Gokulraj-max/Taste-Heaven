@@ -22,7 +22,7 @@ It allows users to:
 ✅ Book Services (Birthday, Catering, Family Dining, Wedding) 🎉  
 ✅ Track Orders & Deliveries 📦  
 ✅ Manage Profiles & Notifications 👤  
-✅ Pay via Cash or Online (Stripe Integration) 💳  
+✅ Pay via Cash or Online 💳  
 
 Admins can manage orders, users, services, and offers with a dedicated dashboard 📊.  
 
