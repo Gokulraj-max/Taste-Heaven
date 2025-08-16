@@ -6,7 +6,6 @@
   <img src="https://img.shields.io/badge/Backend-Express.js-black?style=for-the-badge&logo=express" alt="Express" />
   <img src="https://img.shields.io/badge/Database-MongoDB-green?style=for-the-badge&logo=mongodb" alt="MongoDB" />
   <img src="https://img.shields.io/badge/Styling-TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css" alt="TailwindCSS" />
-  <img src="https://img.shields.io/badge/Payments-Stripe-635BFF?style=for-the-badge&logo=stripe" alt="Stripe" />
 </p>
 
 <p align="center">
