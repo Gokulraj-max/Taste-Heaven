@@ -1,0 +1,79 @@
+/* Main container styling */
+/* Full-Screen Main Container */
+.tracking-container {
+  width: 100vw;  /* Full width */
+  height: 100vh; /* Full height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f8f8;
+  overflow: hidden;
+}
+
+
+/* Page title */
+.tracking-title {
+  font-size: 2rem;
+  color: #d32f2f;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Grid layout */
+.tracking-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual card */
+.tracking-card {
+  width: 280px;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.tracking-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Image inside card */
+.tracking-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Card Heading */
+.tracking-heading {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+/* Card Description */
+.tracking-description {
+  font-size: 1rem;
+  color: #666;
+  padding: 0 15px 20px;
+}
+
+/* Loading Text */
+.auth-checking {
+  font-size: 1.2rem;
+  color: #444;
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+}

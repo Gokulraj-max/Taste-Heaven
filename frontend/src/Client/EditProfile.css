@@ -1,0 +1,95 @@
+.edit-profile-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 40px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: -820px;
+}
+
+.edit-profile-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d32f2f; /* Deep Red */
+  margin-bottom: 15px;
+}
+
+.message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.message.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.edit-profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-profile-form label {
+  font-weight: 500;
+  color: #333;
+  text-align: left;
+}
+
+.edit-profile-form input {
+  width: 100%;
+  padding: 10px;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.edit-profile-form input:focus {
+  border-color: #d32f2f;
+  outline: none;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-top: -5px;
+}
+
+.update-button {
+  background: #d32f2f;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease-in-out;
+}
+
+.update-button:hover {
+  background: #b71c1c;
+}
+
+.update-button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.loading-text {
+  text-align: center;
+  font-size: 16px;
+  color: #777;
+}

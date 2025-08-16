@@ -1,0 +1,82 @@
+.navbara {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  border-bottom: 1px solid #e5e5e5;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar-linksa {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.navbar-linksa li {
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-linksa li a {
+  text-decoration: none;
+  color: #333;
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-linksa li:hover a {
+  color: #fc8019;
+}
+
+.navbar-linksa li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: #fc8019;
+  transition: width 0.3s ease;
+}
+
+.navbar-linksa li:hover a::after {
+  width: 100%;
+}
+
+.navbar-linksa li a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.navbar-linksa li:hover a {
+  transform: translateY(-2px);
+}
+.navbar-logoa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10px; /* Adjust based on your navbar height */
+}
+
+.navbar-logoa img {
+  width: 130px; /* Adjust size as needed */
+  height: auto;
+  object-fit: contain; /* Ensures the image scales properly */
+}

@@ -1,0 +1,122 @@
+/* Navbar1.css */
+
+/* General Styles */
+.navbar1-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: white; /* Background set to white */
+  color: #333; /* Text color set to dark */
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Logo Styles */
+.navbar1-logo img {
+  height: auto; /* Increased logo size */
+  width: 100px;
+  cursor: pointer;
+}
+
+/* Middle Navbar Styles */
+.navbar1-middle-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar1-middle-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar1-middle-nav ul li {
+  margin: 0 15px;
+}
+
+.navbar1-middle-nav ul li a {
+  color: #333; /* Text color set to dark */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar1-middle-nav ul li a:hover {
+  color: rgb(239, 0, 0); /* Hover color set to red */
+}
+
+.navbar1-middle-nav ul li a svg {
+  margin-right: 8px;
+}
+
+/* Mobile Menu Icon Styles */
+.navbar1-nav-icon {
+  background: none;
+  border: none;
+  color: #333; /* Icon color set to dark */
+  font-size: 24px;
+  cursor: pointer;
+  margin-left: 1300px; /* Hide by default, show on smaller screens */
+}
+
+.navbar1-nav-icon:hover {
+  color: rgb(218, 115, 115); /* Hover color set to red */
+}
+
+/* Mobile Menu Styles */
+.navbar1-nav-list {
+  position: absolute;
+  top:80%;
+  right: 0;
+  background-color: white; /* Background set to white */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 200px; /* Set a fixed width for the mobile menu */
+}
+
+.navbar1-nav-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+}
+
+.navbar1-nav-list ul li {
+  margin: 10px 0;
+}
+
+.navbar1-nav-list ul li a,
+.navbar1-nav-list ul li {
+  color: #333; /* Text color set to dark */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar1-nav-list ul li a:hover,
+.navbar1-nav-list ul li:hover {
+  color: rgb(221, 126, 126); /* Hover color set to red */
+  cursor: pointer;
+}
+
+.navbar1-nav-list ul li svg {
+  margin-right: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar1-middle-nav {
+    display: none; /* Hide middle nav on smaller screens */
+  }
+
+  .navbar1-nav-icon {
+    display: block; /* Show menu icon on smaller screens */
+  }
+}

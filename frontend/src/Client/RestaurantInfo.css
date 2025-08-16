@@ -1,0 +1,106 @@
+/* Restaurant Info Section */
+.restaurant-info {
+    background-color: #dccbcb;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 2.5rem;
+    color: #d32f2f; /* Deep Red */
+    margin-bottom: 30px;
+  }
+  
+  /* Info Content */
+  .info-content {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual Info Item */
+  .info-item {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+    overflow: hidden;
+    max-width: 400px;
+    flex: 1;
+    position: relative; /* For positioning pseudo-elements */
+    transition: transform 0.3s ease;
+  }
+  
+  .info-item:hover {
+    transform: scale(1.05); /* Slightly scale the item on hover */
+  }
+  
+  .info-item::before,
+  .info-item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .info-item:hover::before,
+  .info-item:hover::after {
+    opacity: 1;
+  }
+  
+  /* Info Image */
+  .info-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-right: 3px solid #d32f2f; /* Deep Red */
+  }
+  
+  /* Info Text */
+  .info-text {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .info-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+    color: #f1683a;
+  }
+  
+  .info-text p {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .info-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .info-item {
+      max-width: 100%;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .info-image {
+      width: 100%;
+      height: 150px;
+      border-right: none;
+      border-bottom: 3px solid #d32f2f;
+    }
+  }
+  

@@ -1,0 +1,228 @@
+/* General Styles */
+.container-th {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header-th {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.empty-cart-th {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+/* Cart Row Styles */
+.cart-row-th {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.cart-item-th {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image-th {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.quantity-controls-th {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.quantity-button-th {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quantity-button-th:hover {
+  background-color: #0056b3;
+}
+
+.buy-now-th {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+margin-right: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.buy-now-th:hover {
+  background-color: #218838;
+}
+
+.cancel-button-th {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.cancel-button-th:hover {
+  background-color: #c82333;
+}
+
+/* Checkout Styles */
+.checkout-th {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  max-width: 500px;
+  width: 100%;
+}
+
+.close-button-th {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.form-group-th {
+  margin-bottom: 15px;
+}
+
+.form-label-th {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-input-th {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-select-th {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.place-order-th {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.place-order-th:hover {
+  background-color: #218838;
+}
+
+/* Full-screen Payment Prompt Styles */
+.fullscreen-payment-th {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.fullscreen-payment-content-th {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.fullscreen-payment-content-th h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.fullscreen-payment-content-th form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.fullscreen-payment-content-th label {
+  font-weight: bold;
+}
+
+.fullscreen-payment-content-th input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.fullscreen-payment-content-th button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.fullscreen-payment-content-th button:hover {
+  background-color: #0056b3;
+}
+.item-name {
+  font-size: 1.2rem; /* Slightly larger text for emphasis */
+  font-weight: bold; /* Makes it stand out */
+  color: #333; /* Dark grey for readability */
+  text-transform: capitalize; /* Ensures proper formatting */
+  padding: 8px 12px; /* Adds spacing for a clean look */
+  border-radius: 6px; /* Slightly rounded edges */
+  background-color: #f8f8f8; /* Light grey background */
+  display: inline-block; /* Keeps it inline */
+  margin-bottom: 10px; /* Adds spacing below */
+}

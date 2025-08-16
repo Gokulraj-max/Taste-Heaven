@@ -1,0 +1,54 @@
+.toggle-label {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  gap: 10px;
+  color: #333;
+  margin-top: -820px;
+  margin-left: 500px;
+}
+
+.toggle-label input {
+  appearance: none;
+  width: 50px;
+  height: 25px;
+  background: #ccc;
+  border-radius: 50px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  outline: none;
+}
+
+.toggle-label input:checked {
+  background: #d32f2f; /* Deep Red */
+}
+
+.toggle-label input::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  transition: 0.3s ease-in-out;
+}
+
+.toggle-label input:checked::before {
+  left: 25px;
+}
+
+p {
+  font-size: 14px;
+  color: #28a745; /* Green success message */
+  margin-top: 5px;
+}
+
+p.error {
+  color: #d32f2f; /* Red error message */
+}

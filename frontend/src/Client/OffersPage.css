@@ -1,0 +1,232 @@
+/* General Styles */
+.offer-dealsContainer {
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.offer-homeWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.offer-specialDealsPage {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Search Bar */
+.offer-searchPanel {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 0px;
+}
+
+.offer-searchBox {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 15px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.offer-searchBox:focus {
+  border-color: #e6733a;
+}
+
+/* Filter Options */
+.offer-filterOptions {
+  display: flex;
+  color: #000000;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.offer-filterOptions select {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 180px;
+  color: #000000;
+}
+
+.offer-filterOptions select:focus {
+  border-color: #e6733a;
+}
+
+/* Deals Section */
+.offer-dealsSection {
+  margin-top: 20px;
+}
+
+.offer-gridWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.offer-dealCard {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.offer-dealCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.offer-dealImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.offer-cardDetails {
+  padding: 15px;
+}
+
+.offer-dealTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.offer-dealDescription {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.offer-dealPrice {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.offer-oldPrice {
+  text-decoration: line-through;
+  color: #999;
+  margin-left: 10px;
+}
+
+.offer-addDealToCart {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.offer-addDealToCart:hover {
+  background-color: #cc0000;
+}
+
+/* Special Offer Banner */
+.offer-specialOfferBanner {
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  background-color: #ff4757;
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  clip-path: polygon(0 0, 100% 0, 90% 50%, 100% 100%, 0 100%, 10% 50%);
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+
+.offer-specialOfferBanner::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #ff4757;
+}
+
+/* No Deals Message */
+.offer-noDeals {
+  text-align: center;
+  font-size: 20px;
+  color: #444;
+  margin-top: -80px;
+  padding: 15px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  margin-left: 550px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .offer-filterOptions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer-filterOptions select {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .offer-gridWrapper {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .offer-searchBox {
+    font-size: 14px;
+  }
+
+  .offer-filterOptions select {
+    font-size: 12px;
+  }
+
+  .offer-dealTitle {
+    font-size: 16px;
+  }
+
+  .offer-dealDescription {
+    font-size: 12px;
+  }
+
+  .offer-dealPrice {
+    font-size: 14px;
+  }
+
+  .offer-addDealToCart {
+    font-size: 14px;
+  }
+}

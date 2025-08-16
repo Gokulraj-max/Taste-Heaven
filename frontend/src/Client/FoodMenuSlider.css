@@ -1,0 +1,65 @@
+.food-slider {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .food-slider h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: black ;
+  }
+  
+  .food-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: center;
+  }
+  
+  .food-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .food-item img:hover {
+    transform: scale(1.1);
+  }
+  
+  .food-item p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: black;
+  }
+  
+  /* Swiper Navigation Arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  color: white; /* Default arrow color */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  border-radius: 50%; /* Make it circular */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #d32f2f; /* Deep red color on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Customize arrow icons */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 18px;
+  font-weight: bold;
+}

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Carousel Container */
+.carousel {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    /* margin-top: 6.5%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Slide Items */
+.carousel .list {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel .list .item {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.carousel .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel .list .item.active {
+    opacity: 1;
+}
+
+/* Content Overlay */
+.carousel .list .item .content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    color: white;
+    text-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.carousel .list .item .author {
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.carousel .list .item .title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.carousel .list .item .topic {
+    color: #f1683a;
+    font-size: 1.5rem;
+}
+
+.carousel .list .item .des {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Buttons */
+.carousel .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.carousel .buttons button {
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.carousel .buttons button:first-child {
+    color: black;
+    background-color: white;
+}
+
+.carousel .buttons button:last-child {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: white;
+}
+
+.carousel .buttons button:hover {
+    background-color: #f1683a;
+    color: white;
+}
+
+/* Thumbnails */
+.thumbnail {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.thumbnail .item {
+    width: 100px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.thumbnail .item.active {
+    transform: scale(1.1);
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Arrows */
+.arrows {
+    position: absolute;
+    top: 80%;
+    right: 52%;
+    width: 300px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.arrows button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee4;
+    border: none;
+    color: #fff;
+    font-family: monospace;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.arrows button:hover {
+    background-color: #fff;
+    color: #000;
+}

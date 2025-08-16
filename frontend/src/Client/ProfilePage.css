@@ -1,0 +1,50 @@
+ProfilePage.css
+
+.profile-container {
+  display: flex;
+  min-height: 200vh;
+  background-color: #f3f4f6; /* gray-100 */
+}
+
+.profile-sidebar {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  padding: 450px 50px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-sidebar ul {
+ margin-top: -190px;
+  list-style: none;
+  padding: 0;
+
+}
+
+.profile-sidebar li {
+  margin-bottom: 16px;
+}
+
+.profile-sidebar a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #3b82f6; /* blue-500 */
+  border-radius: 6px;
+  transition: background 0.3s ease-in-out;
+}
+
+.profile-sidebar a.active {
+  background-color: #3b82f6; /* blue-500 */
+  color: white;
+  font-weight: bold;
+}
+
+.profile-sidebar a:hover {
+  background-color: #dbeafe; /* light blue */
+}
+
+.profile-content {
+  flex-grow: 1;
+  padding: 24px;
+}

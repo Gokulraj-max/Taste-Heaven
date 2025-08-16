@@ -1,0 +1,133 @@
+/* General Styles */
+.regist-LoginAndRegister {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: url('../assets/images/cor1.jpg') no-repeat center center/cover;
+  position: relative;
+}
+
+.regist-logo-container img {
+  width: 250px;
+  margin-top: -90px;
+}
+
+/* Adding a dark overlay for better visibility */
+.regist-LoginAndRegister::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+}
+
+/* Glassmorphism Card */
+.regist-container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1); /* Translucent white */
+  padding: 40px;
+  border-radius: 12px;
+  width: 380px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px); /* Glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Logo & Title */
+.regist-logo-container {
+  margin-bottom: 20px;
+}
+
+.regist-logo-image {
+  width: 100px;
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3));
+}
+
+.regist-animation h2 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.regist-animation p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 15px;
+}
+
+/* Input Fields */
+.regist-form-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+.regist-form-container input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.regist-form-container input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+
+/* Sign In and Sign Up Buttons */
+.regist-btn.btn-form {
+  background: #3498db; /* Same color for Sign In and Sign Up */
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.regist-btn.btn-form:hover {
+  background: #2980b9; /* Darker shade on hover */
+}
+
+/* Toggle Buttons (Already have an account? Sign In / Don't have an account? Sign Up) */
+.regist-btn.btn-toggle {
+  background: transparent;
+  color: #3498db; /* Different color for toggle buttons */
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.regist-btn.btn-toggle:hover {
+  color: #2980b9; /* Darker shade on hover */
+}
+
+/* Forgot Password */
+.regist-forgot-password {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: underline;
+  margin-top: 10px;
+}
+
+.regist-forgot-password:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
